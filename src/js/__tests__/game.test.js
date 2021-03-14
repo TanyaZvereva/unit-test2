@@ -28,4 +28,22 @@ test("should sort heroes", function () {
       health: 10
     },
   ]);
+  try {
+    expect(result).toBe([{
+      name: 'маг',
+      health: 100
+    },
+    {
+      name: 'лучник',
+      health: 80
+    },
+    {
+      name: 'мечник',
+      health: 10
+    },
+  ]);
+  } catch {
+
+  }
+  
 })
