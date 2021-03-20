@@ -28,8 +28,7 @@ test("should sort heroes", function () {
       health: 10
     },
   ]);
-  try {
-    expect(result).toBe([{
+  expect(result).not.toBe([{
       name: 'маг',
       health: 100
     },
@@ -42,8 +41,4 @@ test("should sort heroes", function () {
       health: 10
     },
   ]);
-  } catch {
-
-  }
-  
 })
